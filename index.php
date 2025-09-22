@@ -37,4 +37,6 @@ echo "<h2>Created by: " . MY_NAME . "</h2>";
 // Use a PHP superglobal to display the current script filename
 echo "<p><strong>Current Script:</strong> " . $_SERVER['PHP_SELF'] . "</p>";
 
+<meta name="description" content="This page includes content assisted by AI tools.">
+
 ?>
