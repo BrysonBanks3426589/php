@@ -80,7 +80,7 @@ foreach ($musicLibrary as $artist => $albums) {
 $pageContent .= "</ul>";
 
 // Output the final content
-echo "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"description\" content=\"This page includes content assisted by AI tools.\">\n<title>Favorite Albums</title>\n</head>\n<body>";
+echo "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"description\" content=\"This page includes content assisted by AI tools.\">\n<title>Favorite Albums</title>\n</head>\n<body>";
 echo $pageContent;
 echo "</body>\n</html>";
 ?>
