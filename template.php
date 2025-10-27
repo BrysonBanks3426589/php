@@ -8,18 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <?php include 'header.php'; ?>
-    <?php include 'navbar.php'; ?>
-
-    <div class="container my-4">
-        <?php echo $pageContents; ?>
-    </div>
-
-    <?php include 'footer.php'; ?>
-
-</body>
-<body>
   <nav class="navbar navbar-dark bg-dark mb-4">
     <div class="container">
       <a href="#" class="navbar-brand">PHP File Upload Project</a>
@@ -34,6 +22,19 @@
     <p>&copy; <?= date('Y') ?> My PHP Project</p>
   </footer>
 </body>
+<body>
+
+    <?php include 'header.php'; ?>
+    <?php include 'navbar.php'; ?>
+
+    <div class="container my-4">
+        <?php echo $pageContents; ?>
+    </div>
+
+    <?php include 'footer.php'; ?>
+
+</body>
+
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div class="container">
