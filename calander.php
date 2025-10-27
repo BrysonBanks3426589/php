@@ -1,10 +1,10 @@
 <?php
-// calendar.php
 
-// Default timezone
+
+
 date_default_timezone_set('America/Chicago');
 
-// Handle user-selected date/time
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["custom_date"])) {
     $selectedDate = strtotime($_POST["custom_date"]);
 } else {
@@ -16,7 +16,7 @@ $currentTime = date("g:i A", $selectedDate);
 $hour = date("H", $selectedDate);
 $month = date("n", $selectedDate);
 
-// Determine time of day greeting and image
+
 if ($hour >= 5 && $hour < 12) {
     $greeting = "Good morning!";
     $timeImage = "morning.jpg";
@@ -31,7 +31,7 @@ if ($hour >= 5 && $hour < 12) {
     $timeImage = "night.jpg";
 }
 
-// Determine season / semester
+
 if ($month >= 3 && $month <= 5) {
     $season = "Spring Semester 🌷";
     $seasonImage = "spring.jpg";
@@ -46,11 +46,11 @@ if ($month >= 3 && $month <= 5) {
     $seasonImage = "winter.jpg";
 }
 
-// Holiday countdown (e.g., Christmas)
+
 $holidayName = "Christmas";
 $holidayDate = strtotime("December 25 " . date("Y", $selectedDate));
 if ($selectedDate > $holidayDate) {
-    // Move to next year's Christmas if date has passed
+   
     $holidayDate = strtotime("December 25 " . (date("Y", $selectedDate) + 1));
 }
 
@@ -61,7 +61,7 @@ if ($daysUntilHoliday == 0) {
     $holidayMessage = "$daysUntilHoliday day" . ($daysUntilHoliday > 1 ? "s" : "") . " until $holidayName!";
 }
 
-// Output begins
+
 ob_start();
 ?>
 
