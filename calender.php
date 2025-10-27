@@ -33,16 +33,16 @@ if ($hour >= 5 && $hour < 12) {
 
 
 if ($month >= 3 && $month <= 5) {
-    $season = "Spring Semester 🌷";
+    $season = "Spring Semester ";
     $seasonImage = "spring.jpg";
 } elseif ($month >= 6 && $month <= 8) {
-    $season = "Summer Semester ☀️";
+    $season = "Summer Semester ";
     $seasonImage = "summer.jpg";
 } elseif ($month >= 9 && $month <= 11) {
-    $season = "Fall Semester 🍁";
+    $season = "Fall Semester ";
     $seasonImage = "fall.jpg";
 } else {
-    $season = "Winter Semester ❄️";
+    $season = "Winter Semester ";
     $seasonImage = "winter.jpg";
 }
 
@@ -56,7 +56,7 @@ if ($selectedDate > $holidayDate) {
 
 $daysUntilHoliday = ceil(($holidayDate - $selectedDate) / 86400);
 if ($daysUntilHoliday == 0) {
-    $holidayMessage = "🎄 Merry Christmas! Enjoy your holiday! 🎁";
+    $holidayMessage = "Merry Christmas! Enjoy your holiday! ";
 } else {
     $holidayMessage = "$daysUntilHoliday day" . ($daysUntilHoliday > 1 ? "s" : "") . " until $holidayName!";
 }
