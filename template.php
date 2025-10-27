@@ -19,4 +19,34 @@
     <?php include 'footer.php'; ?>
 
 </body>
+<body>
+  <nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+      <a href="#" class="navbar-brand">PHP File Upload Project</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <?php ?>
+  </main>
+
+  <footer class="text-center py-4 text-muted">
+    <p>&copy; <?= date('Y') ?> My PHP Project</p>
+  </footer>
+</body>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">CodeStream Calendar</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <?php echo $content; ?>
+    </main>
+
+    <footer class="text-center mt-5 mb-3 text-muted">
+        &copy; <?php echo date('Y'); ?> CodeStream Solutions
+    </footer>
+</body>
 </html>
